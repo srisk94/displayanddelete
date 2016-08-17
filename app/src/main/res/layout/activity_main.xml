@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.srima.displayndelet.MainActivity"
+    android:background="@color/colorPrimaryDark">
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="30dp"
+       android:text="Read and write file"
+       android:id="@+id/title"
+       />
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/title"
+       android:background="@color/white"
+        android:id="@+id/listView">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="enter text"
+            android:id="@+id/ed"/>
+    </LinearLayout>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add data"
+        android:id="@+id/button"
+        android:layout_below="@+id/title"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/listView"
+        android:layout_toRightOf="@+id/listView"
+        android:layout_toEndOf="@+id/listView" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/listView"
+        android:text="Content from file"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:id="@+id/textt"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/fromedit"
+        android:layout_below="@id/textt"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="delete file"
+        android:id="@+id/button2"
+        android:layout_below="@+id/fromedit"
+         />
+
+
+</RelativeLayout>
